@@ -1,17 +1,360 @@
 ---
-
+import Layout from '@layouts/Common.astro'
+import {Icon} from 'astro-icon/components'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <!-- Hero Section -->
+  <section class="format split-2 py-copy">
+    <div class="item">
+      <h1 class="font-extrabold">Rank higher in search. Drive real traffic.</h1>
+      <p class="mt-4 text-base">
+        We help businesses grow through strategic, data-driven SEO. Get found by customers who are
+        actively searching for what you offer.
+      </p>
+      <div class="mt-6 flex gap-4">
+        <button class="bg-primary rounded px-6 py-3 text-white">Free Audit</button>
+        <button class="border-primary text-primary rounded border px-6 py-3">Learn More</button>
+      </div>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="SEO performance graph"
+        class="w-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Logo6 -->
+  <section class="format split-1 py-copy">
+    <h2 class="mb-8 text-center">Trusted by businesses across South Florida and beyond</h2>
+    <div class="format split-6">
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg" alt="Webflow logo" />
+      </div>
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg" alt="Relume logo" />
+      </div>
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg" alt="Webflow logo" />
+      </div>
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg" alt="Relume logo" />
+      </div>
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg" alt="Webflow logo" />
+      </div>
+      <div class="item">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg" alt="Relume logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial17 -->
+  <section class="md:split-3 gap-y-6">
+    <hgroup class="mx-auto max-w-lg text-center">
+      <h2>What clients say</h2>
+      <p class="text-base">Real results from real businesses</p>
+    </hgroup>
+    <ul class="wrap">
+      <li class="item flex flex-col justify-between border p-6">
+        <div>
+          <div class="mb-4 flex text-amber-500">
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+          </div>
+          <blockquote class="mb-6 text-lg font-semibold">
+            "Our organic traffic doubled in six months. Onio Insights knew exactly what we needed."
+          </blockquote>
+        </div>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+            alt="Marcus Rivera"
+            class="size-12 rounded-full"
+          />
+          <div>
+            <p class="mb-0! font-semibold">Marcus Rivera</p>
+            <p class="text-sm">Owner, Miami Retail</p>
+          </div>
+        </div>
+      </li>
+      <li class="item flex flex-col justify-between border p-6">
+        <div>
+          <div class="mb-4 flex text-amber-500">
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+          </div>
+          <blockquote class="mb-6 text-lg font-semibold">
+            "They didn't just promise results. They delivered them. Our rankings moved fast."
+          </blockquote>
+        </div>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+            alt="Sarah Chen"
+            class="size-12 rounded-full"
+          />
+          <div>
+            <p class="mb-0! font-semibold">Sarah Chen</p>
+            <p class="text-sm">CEO, Tech Startup</p>
+          </div>
+        </div>
+      </li>
+      <li class="item flex flex-col justify-between border p-6">
+        <div>
+          <div class="mb-4 flex text-amber-500">
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+            <Icon name="mdi:star" />
+          </div>
+          <blockquote class="mb-6 text-lg font-semibold">
+            "Professional, responsive, and they actually understand our industry. Worth every
+            penny."
+          </blockquote>
+        </div>
+        <div class="flex items-center gap-4">
+          <img
+            src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+            alt="James Whitmore"
+            class="size-12 rounded-full"
+          />
+          <div>
+            <p class="mb-0! font-semibold">James Whitmore</p>
+            <p class="text-sm">Director, Legal Firm</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Stats29 -->
+  <section class="split-2">
+    <div class="item">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h2 class="text-h2 mt-2">The numbers that matter</h2>
+    </div>
+    <div class="item">
+      <p class="text-base">
+        Our clients see real growth. Traffic climbs. Rankings improve. Conversions follow. These
+        aren't promises. They're what happens when strategy meets execution.
+      </p>
+    </div>
+  </section>
+
+  <section class="split-3">
+    <div class="item flex flex-col justify-center border p-8 text-center">
+      <p class="text-h1 text-primary font-extrabold">156%</p>
+      <h3 class="mt-4 font-bold">Average traffic growth</h3>
+      <p class="text-sm">Within the first year of engagement</p>
+    </div>
+    <div class="item flex flex-col justify-center border p-8 text-center">
+      <p class="text-h1 text-primary font-extrabold">47%</p>
+      <h3 class="mt-4 font-bold">Average ranking increase</h3>
+      <p class="text-sm">Across target keywords in 6 months</p>
+    </div>
+    <div class="item flex flex-col justify-center border p-8 text-center">
+      <p class="text-h1 text-primary font-extrabold">3.2x</p>
+      <h3 class="mt-4 font-bold">Return on investment</h3>
+      <p class="text-sm">Measured by qualified lead value</p>
+    </div>
+  </section>
+
+  <!-- Services (Layout508) -->
+  <section>
+    <hgroup class="mx-auto max-w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Services</p>
+      <h2 class="text-h2 mt-2">What we do</h2>
+      <p class="mt-4 text-base">Five core services. One goal. Your dominance in search.</p>
+    </hgroup>
+  </section>
+
+  <section class="split-2">
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="On-page SEO"
+        class="w-full object-cover"
+      />
+    </div>
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">On-page SEO</p>
+      <h2 class="text-h2 mt-2">We refine your pages for both search engines and users.</h2>
+      <p class="mt-4 text-base">
+        Meta tags, headers, keyword placement, and user experience all work together to make your
+        content easy to find and impossible to ignore.
+      </p>
+      <button class="border-primary text-primary mt-6 self-start rounded border px-6 py-2">
+        Learn more
+      </button>
+    </div>
+  </section>
+
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">Technical SEO</p>
+      <h2 class="text-h2 mt-2">We fix the foundation.</h2>
+      <p class="mt-4 text-base">
+        Site speed, mobile friendliness, crawlability, and schema markup. We ensure search engines
+        can read your site without friction.
+      </p>
+      <button class="border-primary text-primary mt-6 self-start rounded border px-6 py-2">
+        Learn more
+      </button>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="Technical SEO"
+        class="w-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Case Studies (Blog22) -->
+  <section>
+    <hgroup class="mx-auto max-w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h2 class="text-h2 mt-2">Featured case studies</h2>
+      <p class="mt-4 text-base">Real businesses. Real growth. Real proof.</p>
+    </hgroup>
+  </section>
+
+  <section class="split-3">
+    <div class="item border p-6">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Case study"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <p class="text-primary mt-4 text-sm font-semibold">E-commerce • 180% growth</p>
+      <h4 class="text-h4 mt-2 font-bold">Miami retail brand tripled organic revenue</h4>
+      <p class="text-sm">From invisible to industry leader in nine months.</p>
+      <button class="text-primary mt-4 flex items-center gap-1 font-semibold">
+        Read more <Icon name="mdi:chevron-right" />
+      </button>
+    </div>
+
+    <div class="item border p-6">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Case study"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <p class="text-primary mt-4 text-sm font-semibold">Tech Startup • 40K visitors</p>
+      <h4 class="text-h4 mt-2 font-bold">SaaS platform dominated their niche</h4>
+      <p class="text-sm">Went from zero to 40K monthly organic visitors.</p>
+      <button class="text-primary mt-4 flex items-center gap-1 font-semibold">
+        Read more <Icon name="mdi:chevron-right" />
+      </button>
+    </div>
+
+    <div class="item border p-6">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Case study"
+        class="aspect-[3/2] w-full object-cover"
+      />
+      <p class="text-primary mt-4 text-sm font-semibold">Services • 280% leads</p>
+      <h4 class="text-h4 mt-2 font-bold">Legal firm became the local authority</h4>
+      <p class="text-sm">Qualified leads increased by 280 percent.</p>
+      <button class="text-primary mt-4 flex items-center gap-1 font-semibold">
+        Read more <Icon name="mdi:chevron-right" />
+      </button>
+    </div>
+  </section>
+
+  <!-- Process (Layout370) -->
+  <section>
+    <hgroup class="mx-auto max-w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Process</p>
+      <h2 class="text-h2 mt-2">How we work</h2>
+      <p class="mt-4 text-base">Transparent. Methodical. Built for results.</p>
+    </hgroup>
+  </section>
+
+  <section class="split-3">
+    <div class="item text-center">
+      <div
+        class="bg-primary/10 text-h3 text-primary mx-auto flex size-16 items-center justify-center rounded-full font-bold"
+      >
+        1
+      </div>
+      <h4 class="text-h4 mt-4 font-bold">Audit and analysis</h4>
+      <p class="text-sm">
+        We dig into your site, competitors, and market to find every opportunity.
+      </p>
+    </div>
+
+    <div class="item text-center">
+      <div
+        class="bg-primary/10 text-h3 text-primary mx-auto flex size-16 items-center justify-center rounded-full font-bold"
+      >
+        2
+      </div>
+      <h4 class="text-h4 mt-4 font-bold">Strategy and planning</h4>
+      <p class="text-sm">We build a custom roadmap focused on high-impact keywords and fixes.</p>
+    </div>
+
+    <div class="item text-center">
+      <div
+        class="bg-primary/10 text-h3 text-primary mx-auto flex size-16 items-center justify-center rounded-full font-bold"
+      >
+        3
+      </div>
+      <h4 class="text-h4 mt-4 font-bold">Execution and tracking</h4>
+      <p class="text-sm">We implement changes and monitor progress daily to ensure growth.</p>
+    </div>
+  </section>
+
+  <!-- About CTA (Layout13) -->
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">About</p>
+      <h2 class="text-h2 mt-2">We know SEO because we live it</h2>
+      <p class="mt-4 text-base">
+        Onio Insights was built on one principle: SEO works when it's done right. We've spent years
+        mastering search, building strategies that move the needle for businesses across South
+        Florida and beyond. No shortcuts. No fluff. Just results.
+      </p>
+      <button class="border-primary text-primary mt-6 self-start rounded border px-6 py-2">
+        Learn more
+      </button>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="Our team"
+        class="w-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Final CTA (Cta31) -->
+  <section>
+    <div class="mx-auto max-w-lg text-center">
+      <h2>Ready to dominate search</h2>
+      <p class="mt-4 text-base">
+        Get your free SEO audit today. See exactly where you stand and what's possible.
+      </p>
+      <div class="mt-6 flex justify-center gap-4">
+        <button class="bg-primary rounded px-6 py-3 text-white">Free Audit</button>
+        <button class="border-primary text-primary rounded border px-6 py-2">Contact</button>
+      </div>
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="SEO success"
+        class="mt-12 w-full rounded"
+      />
+    </div>
+  </section>
+</Layout>

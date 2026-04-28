@@ -1,0 +1,174 @@
+---
+import Layout from '@layouts/Common.astro'
+import {Icon} from 'astro-icon/components'
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="split-2 relative">
+    <div class="item relative z-10">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h1 class="mt-2 font-extrabold text-white">SEO that works</h1>
+      <p class="mt-4 text-base text-white">
+        We rank websites higher and drive real traffic to businesses that matter.
+      </p>
+      <div class="mt-6 flex gap-4">
+        <button class="bg-primary rounded px-6 py-3 text-white">Free Audit</button>
+        <button class="rounded border border-white px-6 py-3 text-white">Learn More</button>
+      </div>
+    </div>
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="SEO background"
+        class="size-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+  </section>
+
+  <!-- Service 1: On-page SEO (Layout16) -->
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">On-page SEO</p>
+      <h2 class="text-h2 mt-2 font-bold">On-page SEO that converts</h2>
+      <p class="mt-4 text-base">
+        Your site's foundation matters. We optimize every element to align with search intent and
+        user behavior.
+      </p>
+      <ul class="mt-4 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Keyword research and targeting
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Meta tag optimization for CTR
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Content structure and readability
+        </li>
+      </ul>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="On-page SEO"
+        class="w-full rounded object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Service 2: Technical SEO -->
+  <section class="split-2">
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="Technical SEO"
+        class="w-full rounded object-cover"
+      />
+    </div>
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">Technical SEO</p>
+      <h2 class="text-h2 mt-2 font-bold">Technical SEO that moves fast</h2>
+      <p class="mt-4 text-base">
+        Crawl errors, site speed, and mobile responsiveness are non-negotiable. We fix the
+        infrastructure so Google can find and rank your pages.
+      </p>
+      <ul class="mt-4 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Site speed optimization
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Mobile-first indexing fixes
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Schema markup implementation
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Service 3: Content SEO (Layout192) -->
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">Content Strategy</p>
+      <h2 class="text-h2 mt-2 font-bold">Content that ranks and converts</h2>
+      <p class="mt-4 text-base">
+        We research what your audience actually searches for, then create content that answers their
+        questions and moves them closer to buying.
+      </p>
+      <ul class="mt-4 flex flex-col gap-2">
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Search intent mapping
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> High-quality copywriting
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon name="mdi:star" class="text-primary" /> Content optimization & updates
+        </li>
+      </ul>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="Content SEO"
+        class="w-full rounded object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="split-2">
+    <div class="item">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h2 class="text-h2 mt-2 font-bold">What our work delivers</h2>
+      <p class="mt-4 text-base">Real numbers from real clients across industries.</p>
+    </div>
+    <div class="item format split-3">
+      <div class="item border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">47%</p>
+        <h4 class="font-semibold">Average ranking increase</h4>
+      </div>
+      <div class="item border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">156%</p>
+        <h4 class="font-semibold">Organic traffic growth</h4>
+      </div>
+      <div class="item border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">3.2x</p>
+        <h4 class="font-semibold">Return on investment</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section>
+    <hgroup class="mx-auto max-w-lg text-center">
+      <h2>Questions</h2>
+      <p class="text-base">Everything you need to know about how we work and what to expect</p>
+    </hgroup>
+
+    <div class="mx-auto mt-12 flex max-w-2xl flex-col gap-4">
+      <details class="rounded border p-4">
+        <summary class="flex cursor-pointer items-center justify-between font-bold">
+          How long until results?
+          <Icon name="mdi:chevron-down" />
+        </summary>
+        <p class="mt-4 text-sm">
+          SEO is not a sprint. Most clients see meaningful movement in three to four months, with
+          stronger gains by month six. We focus on sustainable growth, not quick fixes that fade.
+        </p>
+      </details>
+
+      <details class="rounded border p-4">
+        <summary class="flex cursor-pointer items-center justify-between font-bold">
+          What makes you different?
+          <Icon name="mdi:chevron-down" />
+        </summary>
+        <p class="mt-4 text-sm">
+          We don't use templates or automation. Every strategy is built from scratch based on your
+          market, competitors, and goals.
+        </p>
+      </details>
+    </div>
+  </section>
+</Layout>

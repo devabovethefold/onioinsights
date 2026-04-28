@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* abstracts */
+@import './abstracts/fonts.css';
+@import './abstracts/keyframes.css';
+@import './abstracts/palette.css';
+@import './abstracts/spacing.css';
+
+/* theme */
+@import './themes/light.css';
+@import './themes/dark.css';
+
+/* base */
+@import './base/animations.css';
+@import './base/colors.css';
+@import './base/format.css';
+@import './base/typography.css';
+
+/* landmarks */
+@import './landmarks/contentWrappers.css';
+@import './landmarks/headers.css';
+@import './landmarks/hgroups.css';
+@import './landmarks/sections.css';
+
+/* components */
+@import './components/buttons.css';
+@import './components/tiles.css';

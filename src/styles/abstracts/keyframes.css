@@ -1,0 +1,47 @@
+@keyframes reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dismiss {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes grow-inline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes grow-block {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translate(var(--slide-x, 0), var(--slide-y, 0));
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes loop-horizontally {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

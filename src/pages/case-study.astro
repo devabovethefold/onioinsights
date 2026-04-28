@@ -1,0 +1,161 @@
+---
+import Layout from '@layouts/Common.astro'
+import {Icon} from 'astro-icon/components'
+---
+
+<Layout>
+  <!-- Hero Section -->
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <nav class="mb-4 text-sm">
+        <a href="/case-studies" class="text-primary hover:underline">Case Studies</a> / <span>
+          Results
+        </span>
+      </nav>
+      <h1 class="text-primary font-extrabold">How a Miami tech startup climbed to page one</h1>
+      <div class="mt-4 flex items-center gap-2">
+        <span class="text-sm font-semibold">By Onio Insights</span>
+        <span class="text-sm text-gray-500">• 15 Jan 2024 • 6 min read</span>
+      </div>
+      <div class="text-primary mt-4 flex gap-2">
+        <a href="#"><Icon name="mdi:facebook" class="size-6" /></a>
+        <a href="#"><Icon name="mdi:linkedin" class="size-6" /></a>
+        <a href="#"><Icon name="mdi:twitter" class="size-6" /></a>
+      </div>
+    </div>
+    <div class="item">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+        alt="Case study hero"
+        class="w-full rounded object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="split-2">
+    <div class="item flex flex-col justify-center">
+      <p class="text-primary text-sm font-semibold">The numbers</p>
+      <h2 class="text-h2 mt-2 font-bold">What changed in six months</h2>
+      <p class="mt-4 text-base">Organic traffic growth from baseline to sustained increase.</p>
+    </div>
+    <div class="item format split-3">
+      <div class="item rounded border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">287%</p>
+        <h4 class="font-semibold">Organic traffic increase</h4>
+      </div>
+      <div class="item rounded border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">18</p>
+        <h4 class="font-semibold">Keywords on page one</h4>
+      </div>
+      <div class="item rounded border p-4 text-center">
+        <p class="text-h2 text-primary font-extrabold">156%</p>
+        <h4 class="font-semibold">Qualified leads / mo</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section>
+    <div class="prose mx-auto max-w-2xl">
+      <h2>The Challenge</h2>
+      <p>
+        Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In
+        aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam.
+      </p>
+      <p>
+        Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend
+        faucibus eget vestibulum felis. Dictum quis montes, sit sit.
+      </p>
+
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Strategy session"
+        class="my-8 w-full rounded"
+      />
+
+      <h2>The Approach</h2>
+      <p>
+        Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus
+        velit, sed auctor.
+      </p>
+
+      <blockquote class="border-primary my-6 border-l-4 pl-4 italic">
+        "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque
+        congue eget consectetur turpis."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Approach Details (Layout369) -->
+  <section>
+    <hgroup class="mx-auto max-w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Details</p>
+      <h2 class="text-h2 mt-2 font-bold">The work that moved the needle</h2>
+      <p class="mt-4 text-base">Three core pillars built their success.</p>
+    </hgroup>
+  </section>
+
+  <section class="split-3">
+    <div class="item flex flex-col justify-between rounded border p-6">
+      <div>
+        <p class="text-primary text-sm font-semibold">Foundation</p>
+        <h4 class="text-h4 mt-2 font-bold">Technical SEO audit and fixes</h4>
+        <p class="text-sm">
+          Site speed improved 40%. Crawl errors eliminated. Architecture rebuilt.
+        </p>
+      </div>
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-portrait.svg"
+        alt="Technical SEO"
+        class="mt-4 aspect-[3/4] w-full rounded object-cover"
+      />
+    </div>
+
+    <div class="item flex flex-col justify-between rounded border p-6">
+      <div>
+        <p class="text-primary text-sm font-semibold">Content</p>
+        <h4 class="text-h4 mt-2 font-bold">Targeted pages and strategy</h4>
+        <p class="text-sm">Every page optimized for search and users. No wasted words.</p>
+      </div>
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Content Strategy"
+        class="mt-4 aspect-[3/4] w-full rounded object-cover"
+      />
+    </div>
+
+    <div class="item flex flex-col justify-between rounded border p-6">
+      <div>
+        <p class="text-primary text-sm font-semibold">Authority</p>
+        <h4 class="text-h4 mt-2 font-bold">Quality backlink acquisition</h4>
+        <p class="text-sm">Built domain power through relevant industry relationships.</p>
+      </div>
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Authority Building"
+        class="mt-4 aspect-[3/4] w-full rounded object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section>
+    <div class="mx-auto max-w-lg text-center">
+      <blockquote class="text-xl font-semibold italic">
+        "Working with Onio Insights was the best decision we made for our growth. The results speak
+        for themselves."
+      </blockquote>
+      <p class="mt-4 font-bold">Jane Smith</p>
+      <p class="text-primary text-sm">Founder, Miami Tech Startup</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="mx-auto max-w-lg text-center">
+      <h2>Ready to dominate search</h2>
+      <button class="bg-primary mt-6 rounded px-6 py-3 text-white">Free Audit</button>
+    </div>
+  </section>
+</Layout>

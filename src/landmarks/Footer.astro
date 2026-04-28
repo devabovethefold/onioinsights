@@ -1,0 +1,64 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<footer class="format py-copy">
+  <div class="split-2">
+    <div class="item">
+      <a href="/">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg" alt="Logo image" />
+      </a>
+      <p>Get insights and updates delivered straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Your email" class="border p-2" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    
+    <div class="item format split-3">
+      <div class="item">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO audit</a></li>
+          <li><a href="#">On-page SEO</a></li>
+          <li><a href="#">Technical SEO</a></li>
+          <li><a href="#">Local SEO</a></li>
+          <li><a href="#">Link building</a></li>
+        </ul>
+      </div>
+      
+      <div class="item">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Case studies</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+      
+      <div class="item">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="#"><Icon name="mdi:facebook" /> Facebook</a></li>
+          <li><a href="#"><Icon name="mdi:instagram" /> Instagram</a></li>
+          <li><a href="#"><Icon name="mdi:twitter" /> X</a></li>
+          <li><a href="#"><Icon name="mdi:linkedin" /> LinkedIn</a></li>
+          <li><a href="#"><Icon name="mdi:youtube" /> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <hr class="my-6" />
+  
+  <div class="flex flex-col-reverse justify-between text-sm md:flex-row">
+    <p>© {new Date().getFullYear()} Onio Insights. All rights reserved.</p>
+    <ul class="flex gap-4">
+      <li><a href="#">Privacy policy</a></li>
+      <li><a href="#">Terms of service</a></li>
+      <li><a href="#">Cookie settings</a></li>
+    </ul>
+  </div>
+</footer>
