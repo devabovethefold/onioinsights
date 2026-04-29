@@ -5,155 +5,141 @@ import {Icon} from 'astro-icon/components'
 
 <Layout>
   <!-- Hero Section -->
-  <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
-      <nav class="mb-4 text-sm">
-        <a href="/case-studies" class="text-primary hover:underline">Case Studies</a> / <span>
-          Results
-        </span>
-      </nav>
-      <h1 class="text-primary font-extrabold">How a Miami tech startup climbed to page one</h1>
-      <div class="mt-4 flex items-center gap-2">
-        <span class="text-sm font-semibold">By Onio Insights</span>
-        <span class="text-sm text-gray-500">• 15 Jan 2024 • 6 min read</span>
-      </div>
-      <div class="text-primary mt-4 flex gap-2">
-        <a href="#"><Icon name="mdi:facebook" class="size-6" /></a>
-        <a href="#"><Icon name="mdi:linkedin" class="size-6" /></a>
-        <a href="#"><Icon name="mdi:twitter" class="size-6" /></a>
+  <section class="md:split-2 breakout relative">
+    <div class="item relative z-10 px-8">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h1 class="mt-2 font-extrabold text-white">Proven strategies that moved the needle</h1>
+      <p class="mt-4 text-base text-white">
+        We rank websites higher and drive real traffic to businesses that matter.
+      </p>
+      <div class="mt-6 flex gap-4">
+        <button class="bg-primary rounded px-6 py-3 text-white">Free Audit</button>
       </div>
     </div>
-    <div class="item">
+    <div class="absolute inset-0 z-0">
       <img
         src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Case study hero"
-        class="w-full rounded object-cover"
+        alt="Case studies background"
+        class="size-full object-cover"
       />
+      <div class="absolute inset-0 bg-black/60"></div>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
-      <p class="text-primary text-sm font-semibold">The numbers</p>
-      <h2 class="text-h2 mt-2 font-bold">What changed in six months</h2>
-      <p class="mt-4 text-base">Organic traffic growth from baseline to sustained increase.</p>
-    </div>
-    <div class="item format split-3">
-      <div class="item rounded border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">287%</p>
-        <h4 class="font-semibold">Organic traffic increase</h4>
-      </div>
-      <div class="item rounded border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">18</p>
-        <h4 class="font-semibold">Keywords on page one</h4>
-      </div>
-      <div class="item rounded border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">156%</p>
-        <h4 class="font-semibold">Qualified leads / mo</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- Content Section -->
-  <section>
-    <div class="prose mx-auto max-w-2xl">
-      <h2>The Challenge</h2>
-      <p>
-        Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In
-        aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam.
-      </p>
-      <p>
-        Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend
-        faucibus eget vestibulum felis. Dictum quis montes, sit sit.
-      </p>
-
-      <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Strategy session"
-        class="my-8 w-full rounded"
-      />
-
-      <h2>The Approach</h2>
-      <p>
-        Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus
-        velit, sed auctor.
-      </p>
-
-      <blockquote class="border-primary my-6 border-l-4 pl-4 italic">
-        "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque
-        congue eget consectetur turpis."
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Approach Details (Layout369) -->
-  <section>
-    <hgroup class="mx-auto max-w-lg text-center">
-      <p class="text-primary text-sm font-semibold">Details</p>
-      <h2 class="text-h2 mt-2 font-bold">The work that moved the needle</h2>
-      <p class="mt-4 text-base">Three core pillars built their success.</p>
+  <section class="md:split-2 items-center">
+    <hgroup class="mx-auto mb-12 max-w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Results</p>
+      <h2 class="text-h2 mt-2 font-bold">What our work delivers</h2>
+      <p class="mt-4 text-base">Real numbers from real clients across industries.</p>
     </hgroup>
+    <div class="wrap gap-y-6">
+      <div class="item flex flex-col gap-6">
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">47%</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Average ranking increase</p>
+        </div>
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">156%</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Organic traffic growth</p>
+        </div>
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">3.2x</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Return on investment</p>
+        </div>
+      </div>
+      <div class="item">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          alt="Stats visualization"
+          class="aspect-[4/3] w-full rounded border border-black object-cover md:aspect-auto md:h-full dark:border-white"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Grid -->
+  <section>
+    <div class="mx-auto w-lg text-center">
+      <p class="text-primary text-sm font-semibold">Work</p>
+      <h2 class="text-h2 mt-2 font-bold">All case studies</h2>
+    </div>
   </section>
 
   <section class="md:split-3">
-    <div class="item flex flex-col justify-between rounded border p-6">
-      <div>
-        <p class="text-primary text-sm font-semibold">Foundation</p>
-        <h4 class="text-h4 mt-2 font-bold">Technical SEO audit and fixes</h4>
-        <p class="text-sm">
-          Site speed improved 40%. Crawl errors eliminated. Architecture rebuilt.
-        </p>
-      </div>
-      <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-portrait.svg"
-        alt="Technical SEO"
-        class="mt-4 aspect-[3/4] w-full rounded object-cover"
-      />
-    </div>
-
-    <div class="item flex flex-col justify-between rounded border p-6">
-      <div>
-        <p class="text-primary text-sm font-semibold">Content</p>
-        <h4 class="text-h4 mt-2 font-bold">Targeted pages and strategy</h4>
-        <p class="text-sm">Every page optimized for search and users. No wasted words.</p>
-      </div>
+    <div class="item rounded border p-6">
       <img
         src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Content Strategy"
-        class="mt-4 aspect-[3/4] w-full rounded object-cover"
+        alt="Case study"
+        class="aspect-[3/2] w-full rounded object-cover"
       />
+      <p class="text-primary mt-4 text-sm font-semibold">E-commerce • 180% growth</p>
+      <h4 class="text-h4 mt-2 font-bold">Online retailer breaks traffic ceiling</h4>
+      <p class="text-sm">Six months of focused optimization unlocked exponential growth.</p>
+      <a
+        href="/case-studies/online-retailer-breaks-traffic-ceiling"
+        class="text-primary mt-4 flex items-center gap-1 font-semibold"
+      >
+        View case <Icon name="mdi:chevron-right" />
+      </a>
     </div>
 
-    <div class="item flex flex-col justify-between rounded border p-6">
-      <div>
-        <p class="text-primary text-sm font-semibold">Authority</p>
-        <h4 class="text-h4 mt-2 font-bold">Quality backlink acquisition</h4>
-        <p class="text-sm">Built domain power through relevant industry relationships.</p>
-      </div>
+    <div class="item rounded border p-6">
       <img
         src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Authority Building"
-        class="mt-4 aspect-[3/4] w-full rounded object-cover"
+        alt="Case study"
+        class="aspect-[3/2] w-full rounded object-cover"
       />
+      <p class="text-primary mt-4 text-sm font-semibold">Agency • 42 keywords ranked</p>
+      <h4 class="text-h4 mt-2 font-bold">Digital agency captures first-page dominance</h4>
+      <p class="text-sm">Every target keyword now sits where it belongs.</p>
+      <a
+        href="/case-studies/digital-agency-captures-first-page-dominance"
+        class="text-primary mt-4 flex items-center gap-1 font-semibold"
+      >
+        View case <Icon name="mdi:chevron-right" />
+      </a>
+    </div>
+
+    <div class="item rounded border p-6">
+      <img
+        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+        alt="Case study"
+        class="aspect-[3/2] w-full rounded object-cover"
+      />
+      <p class="text-primary mt-4 text-sm font-semibold">Services • 3x lead volume</p>
+      <h4 class="text-h4 mt-2 font-bold">Professional services firm triples qualified leads</h4>
+      <p class="text-sm">Strategic positioning turned visibility into real business.</p>
+      <a
+        href="/case-studies/professional-services-firm-triples-qualified-leads"
+        class="text-primary mt-4 flex items-center gap-1 font-semibold"
+      >
+        View case <Icon name="mdi:chevron-right" />
+      </a>
     </div>
   </section>
 
   <!-- Testimonial -->
   <section>
-    <div class="mx-auto max-w-lg text-center">
+    <div class="mx-auto w-lg text-center">
       <blockquote class="text-xl font-semibold italic">
-        "Working with Onio Insights was the best decision we made for our growth. The results speak
-        for themselves."
+        "Onio Insights transformed our online presence. We went from being invisible to ranking #1
+        for our most important keywords."
       </blockquote>
-      <p class="mt-4 font-bold">Jane Smith</p>
-      <p class="text-primary text-sm">Founder, Miami Tech Startup</p>
+      <p class="mt-4 font-bold">John Doe</p>
+      <p class="text-primary text-sm">CEO, Tech Innovations</p>
     </div>
   </section>
 
   <!-- CTA -->
   <section>
-    <div class="mx-auto max-w-lg text-center">
+    <div class="mx-auto w-lg text-center">
       <h2>Ready to dominate search</h2>
       <button class="bg-primary mt-6 rounded px-6 py-3 text-white">Free Audit</button>
     </div>
