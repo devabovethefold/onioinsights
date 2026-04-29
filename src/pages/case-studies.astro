@@ -5,8 +5,8 @@ import {Icon} from 'astro-icon/components'
 
 <Layout>
   <!-- Hero Section -->
-  <section class="split-2 relative">
-    <div class="item relative z-10">
+  <section class="md:split-2 breakout relative">
+    <div class="item relative z-10 px-8">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h1 class="mt-2 font-extrabold text-white">Proven strategies that moved the needle</h1>
       <p class="mt-4 text-base text-white">
@@ -26,25 +26,40 @@ import {Icon} from 'astro-icon/components'
     </div>
   </section>
 
-  <!-- Stats58 -->
-  <section class="split-2">
-    <div class="item flex flex-col justify-center">
+  <!-- Stats Section -->
+  <section class="md:split-2 items-center">
+    <hgroup class="mx-auto mb-12 max-w-lg text-center">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h2 class="text-h2 mt-2 font-bold">What our work delivers</h2>
       <p class="mt-4 text-base">Real numbers from real clients across industries.</p>
-    </div>
-    <div class="item format split-3">
-      <div class="item border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">47%</p>
-        <h4 class="font-semibold">Average ranking increase</h4>
+    </hgroup>
+    <div class="wrap gap-y-6">
+      <div class="item flex flex-col gap-6">
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">47%</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Average ranking increase</p>
+        </div>
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">156%</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Organic traffic growth</p>
+        </div>
+        <div
+          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
+        >
+          <p class="text-5xl font-extrabold text-black dark:text-white">3.2x</p>
+          <p class="mt-2 text-sm font-bold text-black dark:text-white">Return on investment</p>
+        </div>
       </div>
-      <div class="item border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">156%</p>
-        <h4 class="font-semibold">Organic traffic growth</h4>
-      </div>
-      <div class="item border p-4 text-center">
-        <p class="text-h2 text-primary font-extrabold">3.2x</p>
-        <h4 class="font-semibold">Return on investment</h4>
+      <div class="item">
+        <img
+          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          alt="Stats visualization"
+          class="aspect-[4/3] w-full rounded border border-black object-cover md:aspect-auto md:h-full dark:border-white"
+        />
       </div>
     </div>
   </section>
@@ -57,7 +72,7 @@ import {Icon} from 'astro-icon/components'
     </div>
   </section>
 
-  <section class="split-3">
+  <section class="md:split-3">
     <div class="item rounded border p-6">
       <img
         src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"

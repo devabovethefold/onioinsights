@@ -3,9 +3,8 @@ import {Icon} from 'astro-icon/components'
 ---
 
 <header class="format py-3">
-  <nav class="flex items-center justify-between">
-    <a href="/" class="text-2xl font-bold">Foundation</a>
-
+  <nav class="flex gap-x-4">
+    <a href="/" class="mr-auto text-2xl font-bold">Onio Insights</a>
     <ul class="hidden items-center justify-between gap-4 text-sm md:flex">
       <li>
         <a href="/services">Services</a>
@@ -22,7 +21,12 @@ import {Icon} from 'astro-icon/components'
     </ul>
 
     <div class="flex items-center justify-between gap-4">
-      <button x-data="$store.theme" @click="toggle()" :aria-label="label" class="p-0">
+      <button
+        x-data="$store.theme"
+        @click="toggle()"
+        :aria-label="label"
+        class="btn-transparent p-0!"
+      >
         <Icon name="mdi:moon-waning-crescent" class="hidden -rotate-25 dark:block" />
         <Icon name="mdi:white-balance-sunny" class="dark:hidden" />
       </button>
@@ -30,7 +34,7 @@ import {Icon} from 'astro-icon/components'
         x-data="$store.drawer"
         @click="toggle()"
         aria-label="Open mobile navigation menu"
-        class="p-0 md:hidden!"
+        class="p-0! md:hidden!"
       >
         <Icon name="mdi:menu" />
       </button>
