@@ -92,9 +92,10 @@
   --border-color-neutral-md: var(--neutral-200);
   --border-color-neutral-hi: var(--neutral-500);
 
-  --box-shadow-color-base-lo: oklch(from var(--base-900) l c h / 0.15);
-  --box-shadow-color-base-md: oklch(from var(--base-900) l c h / 0.2);
-  --box-shadow-color-base-hi: oklch(from var(--base-900) l c h / 0.25);
+  /* Glassmorphic base shadows — subtle cool diffusion for frosted-surface card depth */
+  --box-shadow-color-base-lo: oklch(from var(--base-900) l c h / 0.08);
+  --box-shadow-color-base-md: oklch(from var(--base-900) l c h / 0.13);
+  --box-shadow-color-base-hi: oklch(from var(--base-900) l c h / 0.18);
 
   --box-shadow-color-accent-lo: oklch(from var(--accent-900) l c h / 0.04);
   --box-shadow-color-accent-md: oklch(from var(--accent-900) l c h / 0.08);

@@ -1,13 +1,16 @@
 :root {
-  --color-brand: #1d1fb6;
+  /* Navy-charcoal — BrokerPilot-grade dark base, deep blue shifted toward cool gray */
+  --color-brand: #071424;
 
-  --base: oklch(from var(--color-brand) 0.58 0.16 h);
-  --accent: oklch(from var(--base) calc(l + 0.04) calc(c - 0.02) calc(h - 114));
-  --info: oklch(from var(--base) calc(l + 0.02) calc(c - 0.04) 250);
-  --success: oklch(from var(--base) calc(l - 0.04) calc(c - 0.02) 145);
-  --warning: oklch(from var(--base) calc(l + 0.07) calc(c - 0.01) 85);
-  --error: oklch(from var(--base) l calc(c + 0.02) 25);
-  --neutral: oklch(from var(--base) calc(l - 0.3) 0.002 h);
+  --base: oklch(from var(--color-brand) 0.52 0.10 248);
+  --accent: oklch(from var(--base) calc(l + 0.10) calc(c + 0.02) calc(h + 18));
+  --info: oklch(from var(--base) calc(l + 0.06) calc(c - 0.01) 218);
+  /* Neon Trading Green — maximum viable chroma for positive data readability on dark */
+  --success: oklch(0.76 0.26 142);
+  --warning: oklch(from var(--base) calc(l + 0.14) calc(c + 0.06) 83);
+  /* Neon Alert Red — high-chroma crimson for negative data indicators */
+  --error: oklch(0.65 0.28 22);
+  --neutral: oklch(from var(--base) calc(l - 0.25) 0.006 h);
 
   --white: #ffffff;
   --black: #000000;
@@ -41,12 +44,12 @@
   --step-900-c: 0.055;
   --step-950-l: 0.13;
   --step-950-c: 0.038;
-  --step-990-l: 0.075;
-  --step-990-c: 0.02;
-  --step-995-l: 0.04;
-  --step-995-c: 0.012;
-  --step-999-l: 0.01;
-  --step-999-c: 0.005;
+  --step-990-l: 0.068;
+  --step-990-c: 0.022;
+  --step-995-l: 0.038;
+  --step-995-c: 0.014;
+  --step-999-l: 0.008;
+  --step-999-c: 0.006;
 
   --base-01: oklch(from var(--base) var(--step-01-l) var(--step-01-c) h);
   --base-05: oklch(from var(--base) var(--step-05-l) var(--step-05-c) h);

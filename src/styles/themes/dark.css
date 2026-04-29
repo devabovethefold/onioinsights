@@ -1,8 +1,9 @@
 @custom-variant dark (&:where(.dark, .dark *, [data-theme=dark], [data-theme=dark] *));
 
 @variant dark {
-  --background-color-base-lo: var(--base-999);
-  --background-color-base-md: var(--base-990);
+  /* Navy-charcoal floors — deeper, cooler than palette derivation alone */
+  --background-color-base-lo: oklch(0.07 0.020 248);
+  --background-color-base-md: oklch(0.10 0.024 248);
   --background-color-base-hi: var(--base-500);
 
   --background-color-accent-lo: var(--accent-999);
@@ -92,29 +93,33 @@
   --border-color-neutral-md: var(--neutral-700);
   --border-color-neutral-hi: var(--neutral-500);
 
-  --box-shadow-color-base-lo: oklch(from var(--base-900) l c h / 0.3);
-  --box-shadow-color-base-md: oklch(from var(--base-900) l c h / 0.4);
-  --box-shadow-color-base-hi: oklch(from var(--base-900) l c h / 0.5);
+  /* Glassmorphic base shadows — cool-tinted, diffuse, low opacity for frosted-glass depth */
+  --box-shadow-color-base-lo: oklch(0.05 0.018 248 / 0.35);
+  --box-shadow-color-base-md: oklch(0.05 0.018 248 / 0.50);
+  --box-shadow-color-base-hi: oklch(0.05 0.018 248 / 0.65);
 
-  --box-shadow-color-accent-lo: oklch(from var(--accent-900) l c h / 0.12);
-  --box-shadow-color-accent-md: oklch(from var(--accent-900) l c h / 0.24);
-  --box-shadow-color-accent-hi: oklch(from var(--accent-900) l c h / 0.36);
+  /* Accent glow — subtle neon halo for highlighted elements */
+  --box-shadow-color-accent-lo: oklch(from var(--accent-500) l c h / 0.2);
+  --box-shadow-color-accent-md: oklch(from var(--accent-500) l c h / 0.35);
+  --box-shadow-color-accent-hi: oklch(from var(--accent-500) l c h / 0.5);
 
   --box-shadow-color-info-lo: oklch(from var(--info-900) l c h / 0.12);
   --box-shadow-color-info-md: oklch(from var(--info-900) l c h / 0.24);
   --box-shadow-color-info-hi: oklch(from var(--info-900) l c h / 0.36);
 
-  --box-shadow-color-success-lo: oklch(from var(--success-900) l c h / 0.12);
-  --box-shadow-color-success-md: oklch(from var(--success-900) l c h / 0.24);
-  --box-shadow-color-success-hi: oklch(from var(--success-900) l c h / 0.36);
+  /* Trading Green glow for positive data indicators */
+  --box-shadow-color-success-lo: oklch(from var(--success-500) l c h / 0.2);
+  --box-shadow-color-success-md: oklch(from var(--success-500) l c h / 0.35);
+  --box-shadow-color-success-hi: oklch(from var(--success-500) l c h / 0.5);
 
   --box-shadow-color-warning-lo: oklch(from var(--warning-900) l c h / 0.12);
   --box-shadow-color-warning-md: oklch(from var(--warning-900) l c h / 0.24);
   --box-shadow-color-warning-hi: oklch(from var(--warning-900) l c h / 0.36);
 
-  --box-shadow-color-error-lo: oklch(from var(--error-900) l c h / 0.12);
-  --box-shadow-color-error-md: oklch(from var(--error-900) l c h / 0.24);
-  --box-shadow-color-error-hi: oklch(from var(--error-900) l c h / 0.36);
+  /* Alert Red glow for negative data indicators */
+  --box-shadow-color-error-lo: oklch(from var(--error-500) l c h / 0.2);
+  --box-shadow-color-error-md: oklch(from var(--error-500) l c h / 0.35);
+  --box-shadow-color-error-hi: oklch(from var(--error-500) l c h / 0.5);
 
   --box-shadow-color-neutral-lo: oklch(from var(--neutral-900) l c h / 0.12);
   --box-shadow-color-neutral-md: oklch(from var(--neutral-900) l c h / 0.24);

@@ -4,14 +4,9 @@ import {Icon} from 'astro-icon/components'
 ---
 
 <Layout>
-  <!-- Hero Section (Layout22) -->
+  <!-- Hero Section -->
   <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
-      <img
-        src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
-        alt="Relume icon"
-        class="mb-6 size-16"
-      />
+    <div class="item reveal left-10 duration-600 flex flex-col justify-center">
       <h1 class="text-primary font-extrabold">Built on experience and driven by results</h1>
       <p class="mt-4 text-base">
         Over a decade in digital marketing taught me that SEO works best when it's personal. I've
@@ -24,18 +19,18 @@ import {Icon} from 'astro-icon/components'
         <button class="border-primary text-primary rounded border px-6 py-3">Contact Us</button>
       </div>
     </div>
-    <div class="item">
+    <div class="item reveal right-10 duration-600">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="About us"
+        src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="SEO team working on search strategy"
         class="w-full rounded object-cover"
       />
     </div>
   </section>
 
-  <!-- Stats55 -->
+  <!-- Stats -->
   <section class="md:split-2">
-    <div class="item">
+    <div class="item reveal left-10 duration-500">
       <p class="text-primary text-sm font-semibold">Proven</p>
       <h2 class="text-h2 mt-2 font-bold">The numbers speak for themselves</h2>
       <p class="mt-4 text-base">
@@ -55,37 +50,29 @@ import {Icon} from 'astro-icon/components'
       </div>
     </div>
 
-    <div class="item grid grid-cols-2 gap-6">
-      <div
-        class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-      >
+    <div class="item reveal right-10 duration-500 grid grid-cols-2 gap-6 stagger-100ms">
+      <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
         <p class="text-5xl font-extrabold text-black dark:text-white">150+</p>
         <p class="mt-2 text-sm font-bold text-black dark:text-white">Clients served</p>
       </div>
-      <div
-        class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-      >
+      <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
         <p class="text-5xl font-extrabold text-black dark:text-white">287%</p>
         <p class="mt-2 text-sm font-bold text-black dark:text-white">Average traffic gain</p>
       </div>
-      <div
-        class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-      >
+      <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
         <p class="text-5xl font-extrabold text-black dark:text-white">4.2</p>
         <p class="mt-2 text-sm font-bold text-black dark:text-white">Years average partnership</p>
       </div>
-      <div
-        class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-      >
+      <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
         <p class="text-5xl font-extrabold text-black dark:text-white">89%</p>
         <p class="mt-2 text-sm font-bold text-black dark:text-white">Reach top three rankings</p>
       </div>
     </div>
   </section>
 
-  <!-- Team5 -->
+  <!-- Team -->
   <section>
-    <hgroup class="mx-auto max-w-lg text-center">
+    <hgroup class="mx-auto max-w-lg text-center reveal up-6 duration-500">
       <p class="text-primary text-sm font-semibold">Strategy</p>
       <h2 class="text-h2 mt-2 font-bold">The specialist</h2>
       <p class="mt-4 text-base">
@@ -95,12 +82,12 @@ import {Icon} from 'astro-icon/components'
     </hgroup>
   </section>
 
-  <section class="md:split-3">
-    <div class="item border p-6 text-center">
+  <section class="md:split-3 stagger-150ms">
+    <div class="item reveal up-10 duration-500 border p-6 text-center">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="David Ortiz"
-        class="mx-auto size-24 rounded-full"
+        src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300"
+        alt="David Ortiz - SEO Specialist"
+        class="mx-auto size-24 rounded-full object-cover"
       />
       <h4 class="text-h4 mt-4 font-bold">David Ortiz</h4>
       <p class="text-primary text-sm font-semibold">SEO Specialist</p>
@@ -114,11 +101,11 @@ import {Icon} from 'astro-icon/components'
       </div>
     </div>
 
-    <div class="item border p-6 text-center">
+    <div class="item reveal up-10 duration-500 border p-6 text-center">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Elena Vasquez"
-        class="mx-auto size-24 rounded-full"
+        src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300"
+        alt="Elena Vasquez - Content Strategist"
+        class="mx-auto size-24 rounded-full object-cover"
       />
       <h4 class="text-h4 mt-4 font-bold">Elena Vasquez</h4>
       <p class="text-primary text-sm font-semibold">Content Strategist</p>
@@ -132,11 +119,11 @@ import {Icon} from 'astro-icon/components'
       </div>
     </div>
 
-    <div class="item border p-6 text-center">
+    <div class="item reveal up-10 duration-500 border p-6 text-center">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Marcus Thompson"
-        class="mx-auto size-24 rounded-full"
+        src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300"
+        alt="Marcus Thompson - Technical SEO Lead"
+        class="mx-auto size-24 rounded-full object-cover"
       />
       <h4 class="text-h4 mt-4 font-bold">Marcus Thompson</h4>
       <p class="text-primary text-sm font-semibold">Technical SEO Lead</p>
@@ -151,9 +138,9 @@ import {Icon} from 'astro-icon/components'
     </div>
   </section>
 
-  <!-- Logo4 -->
+  <!-- Partners -->
   <section class="md:split-2">
-    <hgroup class="item flex flex-col justify-center">
+    <hgroup class="item reveal left-10 duration-500 flex flex-col justify-center">
       <h2 class="text-h2 font-bold">Recognized by the industry leaders</h2>
       <p class="mt-4 text-base">
         Certified partners and award winners. We stay current with the tools and standards that
@@ -161,47 +148,31 @@ import {Icon} from 'astro-icon/components'
       </p>
     </hgroup>
 
-    <div class="item format split-2">
-      <div class="item flex justify-center">
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-          alt="Webflow logo"
-          class="h-12"
-        />
+    <div class="item format split-2 stagger-100ms">
+      <div class="item reveal up-4 duration-300 flex justify-center">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg" alt="Webflow" class="h-12" />
       </div>
-      <div class="item flex justify-center">
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg"
-          alt="Webflow logo"
-          class="h-12"
-        />
+      <div class="item reveal up-4 duration-300 flex justify-center">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/webflow-logo.svg" alt="Webflow" class="h-12" />
       </div>
-      <div class="item flex justify-center">
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg"
-          alt="Relume logo"
-          class="h-12"
-        />
+      <div class="item reveal up-4 duration-300 flex justify-center">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg" alt="Relume" class="h-12" />
       </div>
-      <div class="item flex justify-center">
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg"
-          alt="Relume logo"
-          class="h-12"
-        />
+      <div class="item reveal up-4 duration-300 flex justify-center">
+        <img src="https://d22po4pjz3o32e.cloudfront.net/relume-logo.svg" alt="Relume" class="h-12" />
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- FAQ -->
   <section>
-    <hgroup class="mx-auto w-lg text-center">
+    <hgroup class="mx-auto w-lg text-center reveal up-6 duration-500">
       <h2>Questions</h2>
       <p class="text-base">Everything you need to know about how we work and what to expect</p>
     </hgroup>
 
     <div class="mx-auto mt-12 flex w-2xl max-w-full flex-col gap-4">
-      <details class="w-full rounded border p-4">
+      <details class="reveal up-4 duration-400 w-full rounded border p-4">
         <summary class="flex cursor-pointer items-center justify-between font-bold">
           How long until results?
           <Icon name="mdi:chevron-down" />
@@ -212,7 +183,7 @@ import {Icon} from 'astro-icon/components'
         </p>
       </details>
 
-      <details class="w-full rounded border p-4">
+      <details class="reveal up-4 duration-400 w-full rounded border p-4">
         <summary class="flex cursor-pointer items-center justify-between font-bold">
           What makes you different?
           <Icon name="mdi:chevron-down" />

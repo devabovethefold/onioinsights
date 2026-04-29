@@ -6,7 +6,7 @@ import {Icon} from 'astro-icon/components'
 <Layout>
   <!-- Hero Section -->
   <section class="md:split-2 breakout relative">
-    <div class="item relative z-10 px-8">
+    <div class="item relative z-10 px-8 reveal up-8 duration-500">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h1 class="mt-2 font-extrabold text-white">SEO that works</h1>
       <p class="mt-4 text-base text-white">
@@ -19,17 +19,17 @@ import {Icon} from 'astro-icon/components'
     </div>
     <div class="absolute inset-0 z-0">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="SEO background"
+        src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="SEO analytics and search ranking data"
         class="size-full object-cover"
       />
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
   </section>
 
-  <!-- Service 1: On-page SEO (Layout16) -->
+  <!-- Service 1: On-page SEO -->
   <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
+    <div class="item reveal left-12 duration-600 flex flex-col justify-center">
       <p class="text-primary text-sm font-semibold">On-page SEO</p>
       <h2 class="text-h2 mt-2 font-bold">On-page SEO that converts</h2>
       <p class="mt-4 text-base">
@@ -48,10 +48,10 @@ import {Icon} from 'astro-icon/components'
         </li>
       </ul>
     </div>
-    <div class="item">
+    <div class="item reveal right-12 duration-600">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="On-page SEO"
+        src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="On-page SEO content optimization and keyword strategy"
         class="w-full rounded object-cover"
       />
     </div>
@@ -59,14 +59,14 @@ import {Icon} from 'astro-icon/components'
 
   <!-- Service 2: Technical SEO -->
   <section class="md:split-2">
-    <div class="item">
+    <div class="item reveal left-12 duration-600">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Technical SEO"
+        src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="Technical SEO site speed and crawlability"
         class="w-full rounded object-cover"
       />
     </div>
-    <div class="item flex flex-col justify-center">
+    <div class="item reveal right-12 duration-600 flex flex-col justify-center">
       <p class="text-primary text-sm font-semibold">Technical SEO</p>
       <h2 class="text-h2 mt-2 font-bold">Technical SEO that moves fast</h2>
       <p class="mt-4 text-base">
@@ -87,9 +87,9 @@ import {Icon} from 'astro-icon/components'
     </div>
   </section>
 
-  <!-- Service 3: Content SEO (Layout192) -->
+  <!-- Service 3: Content SEO -->
   <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
+    <div class="item reveal left-12 duration-600 flex flex-col justify-center">
       <p class="text-primary text-sm font-semibold">Content Strategy</p>
       <h2 class="text-h2 mt-2 font-bold">Content that ranks and converts</h2>
       <p class="mt-4 text-base">
@@ -108,10 +108,10 @@ import {Icon} from 'astro-icon/components'
         </li>
       </ul>
     </div>
-    <div class="item">
+    <div class="item reveal right-12 duration-600">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Content SEO"
+        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="Content strategy and SEO copywriting"
         class="w-full rounded object-cover"
       />
     </div>
@@ -119,37 +119,31 @@ import {Icon} from 'astro-icon/components'
 
   <!-- Stats Section -->
   <section class="md:split-2 items-center">
-    <hgroup class="mx-auto mb-12 max-w-lg text-center">
+    <hgroup class="mx-auto mb-12 max-w-lg text-center reveal up-6 duration-500">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h2 class="text-h2 mt-2 font-bold">What our work delivers</h2>
       <p class="mt-4 text-base">Real numbers from real clients across industries.</p>
     </hgroup>
 
     <div class="wrap gap-y-6">
-      <div class="item flex flex-col gap-6">
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+      <div class="item flex flex-col gap-6 stagger-100ms">
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">47%</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Average ranking increase</p>
         </div>
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">156%</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Organic traffic growth</p>
         </div>
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">3.2x</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Return on investment</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item reveal right-10 duration-600">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-          alt="Stats visualization"
+          src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="SEO performance metrics and analytics dashboard"
           class="aspect-[4/3] w-full rounded border border-black object-cover md:aspect-auto md:h-full dark:border-white"
         />
       </div>
@@ -158,13 +152,13 @@ import {Icon} from 'astro-icon/components'
 
   <!-- FAQ Section -->
   <section>
-    <hgroup class="mx-auto max-w-lg text-center">
+    <hgroup class="mx-auto max-w-lg text-center reveal up-6 duration-500">
       <h2>Questions</h2>
       <p class="text-base">Everything you need to know about how we work and what to expect</p>
     </hgroup>
 
     <div class="mx-auto mt-12 flex w-2xl max-w-full flex-col gap-4">
-      <details class="w-full rounded border p-4">
+      <details class="reveal up-4 duration-400 w-full rounded border p-4">
         <summary class="flex cursor-pointer items-center justify-between font-bold">
           How long until results?
           <Icon name="mdi:chevron-down" />
@@ -175,7 +169,7 @@ import {Icon} from 'astro-icon/components'
         </p>
       </details>
 
-      <details class="w-full rounded border p-4">
+      <details class="reveal up-4 duration-400 w-full rounded border p-4">
         <summary class="flex cursor-pointer items-center justify-between font-bold">
           What makes you different?
           <Icon name="mdi:chevron-down" />

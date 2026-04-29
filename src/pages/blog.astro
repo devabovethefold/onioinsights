@@ -6,7 +6,7 @@ import {Icon} from 'astro-icon/components'
 <Layout>
   <!-- Hero Section -->
   <section class="md:split-2 relative">
-    <div class="item relative z-10">
+    <div class="item relative z-10 reveal up-8 duration-500">
       <p class="text-primary text-sm font-semibold">Featured</p>
       <h1 class="mt-2 font-extrabold text-white">What's trending in search</h1>
       <p class="mt-4 text-base text-white">
@@ -15,27 +15,27 @@ import {Icon} from 'astro-icon/components'
     </div>
     <div class="absolute inset-0 z-0">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Blog hero"
+        src="https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="SEO blog insights and search trends"
         class="size-full object-cover"
       />
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
   </section>
 
-  <!-- Blog Posts Grid -->
+  <!-- Blog Posts heading -->
   <section>
-    <div class="mx-auto w-lg text-center">
+    <div class="mx-auto w-lg text-center reveal up-6 duration-500">
       <h2 class="text-h2 font-bold">Latest from the lab</h2>
     </div>
   </section>
 
-  <section class="md:split-3">
-    <div class="item flex flex-col justify-between rounded border p-6">
+  <section class="md:split-3 stagger-150ms">
+    <div class="item reveal up-10 duration-500 flex flex-col justify-between rounded border p-6">
       <div>
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-          alt="Blog post"
+          src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Core Web Vitals and page speed for SEO"
           class="aspect-video w-full rounded object-cover"
         />
         <p class="text-primary mt-4 text-sm font-semibold">Technical SEO • 8 min read</p>
@@ -50,11 +50,11 @@ import {Icon} from 'astro-icon/components'
       </button>
     </div>
 
-    <div class="item flex flex-col justify-between rounded border p-6">
+    <div class="item reveal up-10 duration-500 flex flex-col justify-between rounded border p-6">
       <div>
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-          alt="Blog post"
+          src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Title tags and meta descriptions for SEO click-through rate"
           class="aspect-video w-full rounded object-cover"
         />
         <p class="text-primary mt-4 text-sm font-semibold">On-page SEO • 6 min read</p>
@@ -68,11 +68,11 @@ import {Icon} from 'astro-icon/components'
       </button>
     </div>
 
-    <div class="item flex flex-col justify-between rounded border p-6">
+    <div class="item reveal up-10 duration-500 flex flex-col justify-between rounded border p-6">
       <div>
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-          alt="Blog post"
+          src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Link building and domain authority strategy"
           class="aspect-video w-full rounded object-cover"
         />
         <p class="text-primary mt-4 text-sm font-semibold">Link building • 10 min read</p>
@@ -87,9 +87,9 @@ import {Icon} from 'astro-icon/components'
     </div>
   </section>
 
-  <!-- Newsletter CTA (Cta32) -->
+  <!-- Newsletter CTA -->
   <section class="md:split-2">
-    <div class="item flex flex-col justify-center">
+    <div class="item reveal left-10 duration-600 flex flex-col justify-center">
       <h2 class="text-h2 font-bold">Stay ahead of the curve</h2>
       <p class="mt-4 text-base">Get weekly SEO strategies delivered straight to your inbox.</p>
       <form class="mt-6 flex gap-2">
@@ -100,24 +100,24 @@ import {Icon} from 'astro-icon/components'
       </form>
       <p class="text-xs text-gray-500">We respect your inbox. Unsubscribe anytime.</p>
     </div>
-    <div class="item">
+    <div class="item reveal right-10 duration-600">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Newsletter"
+        src="https://images.pexels.com/photos/4050291/pexels-photo-4050291.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="SEO newsletter and weekly insights subscription"
         class="w-full rounded object-cover"
       />
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- FAQ -->
   <section>
-    <hgroup class="mx-auto max-w-lg text-center">
+    <hgroup class="mx-auto max-w-lg text-center reveal up-6 duration-500">
       <h2>Questions</h2>
       <p class="text-base">Everything you need to know about how we work and what to expect</p>
     </hgroup>
 
     <div class="mx-auto mt-12 flex w-2xl max-w-full flex-col gap-4">
-      <details class="w-full rounded border p-4">
+      <details class="reveal up-4 duration-400 w-full rounded border p-4">
         <summary class="flex cursor-pointer items-center justify-between font-bold">
           How long until results?
           <Icon name="mdi:chevron-down" />

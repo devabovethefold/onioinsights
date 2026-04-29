@@ -1,14 +1,10 @@
 import {defineConfig, fontProviders} from 'astro/config'
 
 import alpinejs from '@astrojs/alpinejs'
-import cloudflare from '@astrojs/cloudflare'
 import icon from 'astro-icon'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  adapter: cloudflare({
-    prerenderEnvironment: 'node',
-  }),
   fonts: [
     {
       provider: fontProviders.google(),

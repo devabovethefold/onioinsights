@@ -6,7 +6,7 @@ import {Icon} from 'astro-icon/components'
 <Layout>
   <!-- Hero Section -->
   <section class="md:split-2 breakout relative">
-    <div class="item relative z-10 px-8">
+    <div class="item relative z-10 px-8 reveal up-8 duration-500">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h1 class="mt-2 font-extrabold text-white">Proven strategies that moved the needle</h1>
       <p class="mt-4 text-base text-white">
@@ -18,8 +18,8 @@ import {Icon} from 'astro-icon/components'
     </div>
     <div class="absolute inset-0 z-0">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-        alt="Case studies background"
+        src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="SEO case studies analytics and results"
         class="size-full object-cover"
       />
       <div class="absolute inset-0 bg-black/60"></div>
@@ -28,55 +28,49 @@ import {Icon} from 'astro-icon/components'
 
   <!-- Stats Section -->
   <section class="md:split-2 items-center">
-    <hgroup class="mx-auto mb-12 max-w-lg text-center">
+    <hgroup class="mx-auto mb-12 max-w-lg text-center reveal up-6 duration-500">
       <p class="text-primary text-sm font-semibold">Results</p>
       <h2 class="text-h2 mt-2 font-bold">What our work delivers</h2>
       <p class="mt-4 text-base">Real numbers from real clients across industries.</p>
     </hgroup>
     <div class="wrap gap-y-6">
-      <div class="item flex flex-col gap-6">
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+      <div class="item flex flex-col gap-6 stagger-100ms">
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">47%</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Average ranking increase</p>
         </div>
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">156%</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Organic traffic growth</p>
         </div>
-        <div
-          class="flex flex-col justify-center border border-black p-8 text-center dark:border-white"
-        >
+        <div class="reveal up-6 duration-400 flex flex-col justify-center border border-black p-8 text-center dark:border-white">
           <p class="text-5xl font-extrabold text-black dark:text-white">3.2x</p>
           <p class="mt-2 text-sm font-bold text-black dark:text-white">Return on investment</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item reveal right-10 duration-600">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-          alt="Stats visualization"
+          src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="SEO performance dashboard and growth metrics"
           class="aspect-[4/3] w-full rounded border border-black object-cover md:aspect-auto md:h-full dark:border-white"
         />
       </div>
     </div>
   </section>
 
-  <!-- Case Studies Grid -->
+  <!-- Case Studies Grid heading -->
   <section>
-    <div class="mx-auto w-lg text-center">
+    <div class="mx-auto w-lg text-center reveal up-6 duration-500">
       <p class="text-primary text-sm font-semibold">Work</p>
       <h2 class="text-h2 mt-2 font-bold">All case studies</h2>
     </div>
   </section>
 
-  <section class="md:split-3">
-    <div class="item rounded border p-6">
+  <section class="md:split-3 stagger-150ms">
+    <div class="item reveal up-10 duration-500 rounded border p-6">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Case study"
+        src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="E-commerce SEO case study online retailer growth"
         class="aspect-[3/2] w-full rounded object-cover"
       />
       <p class="text-primary mt-4 text-sm font-semibold">E-commerce • 180% growth</p>
@@ -87,10 +81,10 @@ import {Icon} from 'astro-icon/components'
       </button>
     </div>
 
-    <div class="item rounded border p-6">
+    <div class="item reveal up-10 duration-500 rounded border p-6">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Case study"
+        src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Digital agency SEO first-page rankings"
         class="aspect-[3/2] w-full rounded object-cover"
       />
       <p class="text-primary mt-4 text-sm font-semibold">Agency • 42 keywords ranked</p>
@@ -101,10 +95,10 @@ import {Icon} from 'astro-icon/components'
       </button>
     </div>
 
-    <div class="item rounded border p-6">
+    <div class="item reveal up-10 duration-500 rounded border p-6">
       <img
-        src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-        alt="Case study"
+        src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Professional services SEO lead generation"
         class="aspect-[3/2] w-full rounded object-cover"
       />
       <p class="text-primary mt-4 text-sm font-semibold">Services • 3x lead volume</p>
@@ -118,7 +112,7 @@ import {Icon} from 'astro-icon/components'
 
   <!-- Testimonial -->
   <section>
-    <div class="mx-auto w-lg text-center">
+    <div class="mx-auto w-lg text-center reveal up-8 duration-600">
       <blockquote class="text-xl font-semibold italic">
         "Onio Insights transformed our online presence. We went from being invisible to ranking #1
         for our most important keywords."
@@ -130,7 +124,7 @@ import {Icon} from 'astro-icon/components'
 
   <!-- CTA -->
   <section>
-    <div class="mx-auto w-lg text-center">
+    <div class="mx-auto w-lg text-center reveal up-8 duration-600">
       <h2>Ready to dominate search</h2>
       <button class="bg-primary mt-6 rounded px-6 py-3 text-white">Free Audit</button>
     </div>

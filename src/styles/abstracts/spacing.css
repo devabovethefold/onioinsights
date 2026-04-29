@@ -1,6 +1,7 @@
 @theme {
-  --spacing-copy: clamp(2rem, -1rem + 7.5vw, 5rem);
-  --gap-copy: clamp(0.5rem, -1rem + 3.75vw, 2rem);
+  /* Reduced padding for a more compact, data-dense FinTech layout */
+  --spacing-copy: clamp(1.25rem, -0.5rem + 5.5vw, 3.5rem);
+  --gap-copy: clamp(0.375rem, -0.5rem + 2.75vw, 1.5rem);
 
   --copy-width: 60.25rem;
   --breakout-width: 75.25rem;
