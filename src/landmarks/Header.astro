@@ -3,7 +3,9 @@ import {Icon} from 'astro-icon/components'
 import Logo from '../components/Logo.astro'
 ---
 
-<header class="format glass timeline-scroll range-end-[100px] sticky top-0 z-100 py-3">
+<header
+  class="format glass timeline-scroll range-start-[0px] range-end-[100px] fixed top-0 z-100 w-full bg-transparent py-3 backdrop-blur-none"
+>
   <nav class="flex w-full items-center gap-x-4">
     <a href="/" class="mr-auto">
       <Logo class="h-8 w-auto" />

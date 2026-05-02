@@ -29,8 +29,12 @@
 }
 
 @keyframes glass {
+  from {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
   to {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
   }
 }

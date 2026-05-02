@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content'
+import {getCollection} from 'astro:content'
 import Layout from '@layouts/Common.astro'
 
 const cases = await getCollection('cases')
@@ -8,40 +8,42 @@ const subtitle = 'Case Studies'
 ---
 
 <Layout {title} {subtitle}>
-  <section class="md:split-2 gap-8!">
-    {
-      cases.map((entry) => (
-        <article class="surface group space-y-6 rounded-2xl p-8 shadow-md! transition-all hover:-translate-y-1 hover:shadow-xl!">
-          <div class="space-y-2">
-            <p class="text-info-hi text-sm font-bold uppercase tracking-wider">
-              {entry.data.category}
-            </p>
-            <h3 class="text-3xl font-bold leading-tight group-hover:text-info-hi transition-colors">
-              {entry.data.title}
-            </h3>
-          </div>
-          <p class="text-neutral-md line-clamp-3">{entry.data.description}</p>
-          <div class="border-neutral-lo flex items-center justify-between border-t pt-4">
-            <span class="font-medium">{entry.data.client}</span>
-            <a href={`/cases/${entry.id}`} class="text-info-hi flex items-center gap-2 font-bold">
-              View Case
-              <svg
-                class="size-4 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </a>
-          </div>
-        </article>
-      ))
-    }
+  <section class="md:split-2 lg:split-3">
+    <div class="wrap gap-y-4">
+      {
+        cases.map(entry => (
+          <article class="surface group space-y-6 rounded-2xl p-8 shadow-md! transition-all hover:-translate-y-1 hover:shadow-xl!">
+            <div class="space-y-2">
+              <p class="text-info-hi text-sm font-bold tracking-wider uppercase">
+                {entry.data.category}
+              </p>
+              <h3 class="group-hover:text-info-hi text-h5! leading-tight font-bold transition-colors">
+                {entry.data.title}
+              </h3>
+            </div>
+            <p class="text-neutral-md line-clamp-3">{entry.data.description}</p>
+            <div class="border-neutral-lo grid items-center justify-between gap-y-4 border-t pt-4">
+              <span class="font-medium">{entry.data.client}</span>
+              <a href={`/cases/${entry.id}`} class="text-info-hi flex items-center gap-2 font-bold">
+                View Case
+                <svg
+                  class="size-4 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
   </section>
 </Layout>

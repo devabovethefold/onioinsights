@@ -16,7 +16,10 @@ const pathname = Astro.url.pathname
       <div class="item space-y-8">
         <hgroup class="space-y-4!">
           <h1>Make Your Brand Discoverable</h1>
-          <p>Onio Insights helps marketers measure and grow their brand visibility across the modern web.</p>
+          <p>
+            Onio Insights helps marketers measure and grow their brand visibility across the modern
+            web.
+          </p>
         </hgroup>
         <div class="flex gap-2">
           <a class="btn" href="#">
@@ -28,15 +31,11 @@ const pathname = Astro.url.pathname
         </div>
       </div>
       <div class="item">
-        <img
-          src={HeroImage.src}
-          alt="Hero Image"
-          class="h-auto w-full object-fill"
-        />
+        <img src={HeroImage.src} alt="Hero Image" class="h-auto w-full object-fill" />
       </div>
     </header>
   ) : (
-    <header class="py-hero breakout text-center">
+    <header class="pt-hero breakout pb-8 text-center">
       <hgroup>
         {subtitle && <p>{subtitle}</p>}
         <h2>{title}</h2>
