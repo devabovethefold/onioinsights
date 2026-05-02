@@ -1,0 +1,59 @@
+---
+import {getCollection} from 'astro:content'
+import Layout from '@layouts/Common.astro'
+
+const services = await getCollection('services')
+const title = 'What We Do'
+const subtitle = 'Our Services'
+---
+
+<Layout {title} {subtitle}>
+  <section class="md:split-2 lg:split-3">
+    <div class="wrap gap-y-4!">
+      {
+        services.map(entry => (
+          <article class="surface item group flex flex-col overflow-hidden rounded-2xl shadow-md! transition-all hover:-translate-y-1 hover:shadow-xl!">
+            {entry.data.image && (
+              <div class="h-48 overflow-hidden">
+                <img
+                  src={entry.data.image}
+                  alt={entry.data.title}
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            )}
+            <div class="flex flex-1 flex-col p-8">
+              <div class="mb-4 space-y-2">
+                <h3 class="group-hover:text-info-hi text-2xl leading-tight font-bold transition-colors">
+                  {entry.data.title}
+                </h3>
+              </div>
+              <p class="text-neutral-md mb-6 line-clamp-3 flex-1">{entry.data.description}</p>
+              <div class="border-neutral-lo mt-auto flex items-center justify-between border-t pt-4">
+                <a
+                  href={`/services/${entry.id}`}
+                  class="text-info-hi flex items-center gap-2 font-bold"
+                >
+                  Learn More
+                  <svg
+                    class="size-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</Layout>

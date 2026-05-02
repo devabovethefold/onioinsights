@@ -42,9 +42,9 @@
     [screen-start]
     0px
     [fullwidth-start]
-    1fr
-    [copy-start]
     auto
+    [copy-start]
+    var(--copy-size)
     [copy-end]
     1fr
     [fullwidth-end]

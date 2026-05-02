@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '@layouts/Common.astro'
+
+export async function getStaticPaths() {
+  const services = await getCollection('services')
+  return services.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+
+const title = entry.data.title
+const subtitle = "Service"
+---
+
+<Layout {title} {subtitle}>
+  <article class="py-content format mx-auto max-w-4xl!">
+    {entry.data.image && (
+      <div class="mb-12 overflow-hidden rounded-2xl shadow-lg">
+        <img 
+          src={entry.data.image} 
+          alt={entry.data.title} 
+          class="w-full h-auto object-cover max-h-[400px]"
+        />
+      </div>
+    )}
+    <div class="prose-lg! mx-auto">
+      <Content />
+    </div>
+
+    <footer class="border-neutral-lo mt-16 border-t pt-12 text-center">
+      <a href="/services" class="text-info-hi flex items-center justify-center gap-2 font-bold hover:underline">
+        <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to All Services
+      </a>
+    </footer>
+  </article>
+</Layout>
