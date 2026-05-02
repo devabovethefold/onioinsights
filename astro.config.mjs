@@ -6,7 +6,6 @@ import alpinejs from '@astrojs/alpinejs'
 
 import icon from 'astro-icon'
 
-import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   fonts: [
@@ -56,5 +55,4 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: cloudflare(),
 })
