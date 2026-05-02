@@ -1,17 +1,14 @@
 :root {
-  /* Navy-charcoal — BrokerPilot-grade dark base, deep blue shifted toward cool gray */
-  --color-brand: #071424;
+  --color-brand: #1a5532;
   --color-brand-accent: #1a5231;
 
-  --base: oklch(from var(--color-brand) 0.52 0.10 248);
-  --accent: oklch(0.35 0.08 145);
-  --info: oklch(from var(--base) calc(l + 0.06) calc(c - 0.01) 218);
-  /* Neon Trading Green — maximum viable chroma for positive data readability on dark */
-  --success: oklch(0.76 0.26 142);
-  --warning: oklch(from var(--base) calc(l + 0.14) calc(c + 0.06) 83);
-  /* Neon Alert Red — high-chroma crimson for negative data indicators */
-  --error: oklch(0.65 0.28 22);
-  --neutral: oklch(from var(--base) calc(l - 0.25) 0.006 h);
+  --base: oklch(from var(--color-brand) 0.58 0.16 h);
+  --accent: oklch(from var(--base) calc(l + 0.04) calc(c - 0.02) calc(h + 180));
+  --info: oklch(from var(--base) calc(l + 0.02) calc(c - 0.04) 250);
+  --success: oklch(from var(--base) calc(l - 0.04) calc(c - 0.02) 145);
+  --warning: oklch(from var(--base) calc(l + 0.07) calc(c - 0.01) 85);
+  --error: oklch(from var(--base) l calc(c + 0.02) 25);
+  --neutral: oklch(from var(--base) calc(l - 0.02) 0.01 h);
 
   --white: #ffffff;
   --black: #000000;

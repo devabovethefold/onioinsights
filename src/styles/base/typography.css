@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-none;
+  @apply leading-[1.15];
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  @apply text-h2 leading-tight font-semibold;
+  @apply text-h2 font-semibold;
 }
 
 h3 {
