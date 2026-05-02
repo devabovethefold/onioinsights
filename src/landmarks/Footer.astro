@@ -1,16 +1,18 @@
 ---
 import {Icon} from 'astro-icon/components'
+
+import Logo from '../components/Logo.astro'
 ---
 
-<footer class="format pt-16 pb-4 text-gray-900">
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-12">
-    <!-- Newsletter / Logo -->
-    <div class="flex flex-col justify-start md:col-span-6">
-      <a href="/" class="font-script mb-6 text-4xl text-black">Logo</a>
+<footer class="format lg:split-2 pt-copy">
+  <div class="wrap gap-y-6">
+    <div class="item">
+      <a href="/">
+        <Logo class="mb-3 h-10 w-auto" />
+      </a>
       <p class="mb-4 max-w-sm text-base text-gray-700">
         Get insights and updates delivered straight to your inbox.
       </p>
-
       <form class="mb-3 flex max-w-md gap-4">
         <input
           type="email"
@@ -24,72 +26,70 @@ import {Icon} from 'astro-icon/components'
           Subscribe
         </button>
       </form>
-
       <p class="max-w-sm text-xs leading-relaxed text-gray-500">
         By subscribing you agree to our Privacy Policy and consent to receive updates from Onio
         Insights.
       </p>
     </div>
-
-    <!-- Services -->
-    <div class="md:col-span-2">
-      <h4 class="mb-4 text-base font-bold text-black">Services</h4>
-      <ul class="space-y-3 text-sm text-gray-700">
-        <li><a href="#" class="transition-colors hover:text-black">SEO audit</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">On-page SEO</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Technical SEO</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Local SEO</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Link building</a></li>
-      </ul>
-    </div>
-
-    <!-- Company -->
-    <div class="md:col-span-2">
-      <h4 class="mb-4 text-base font-bold text-black">Company</h4>
-      <ul class="space-y-3 text-sm text-gray-700">
-        <li><a href="#" class="transition-colors hover:text-black">About us</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Case studies</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Blog</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Contact</a></li>
-        <li><a href="#" class="transition-colors hover:text-black">Resources</a></li>
-      </ul>
-    </div>
-
-    <!-- Follow us -->
-    <div class="md:col-span-2">
-      <h4 class="mb-4 text-base font-bold text-black">Follow us</h4>
-      <ul class="space-y-3 text-sm text-gray-700">
-        <li>
-          <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
-            <Icon name="mdi:facebook" class="text-xl text-black" />
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
-            <Icon name="mdi:instagram" class="text-xl text-black" />
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
-            <Icon name="mdi:twitter" class="text-xl text-black" />
-            <span>X</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
-            <Icon name="mdi:linkedin" class="text-xl text-black" />
-            <span>LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
-            <Icon name="mdi:youtube" class="text-xl text-black" />
-            <span>YouTube</span>
-          </a>
-        </li>
-      </ul>
+    <div class="item grid md:grid-cols-3">
+      <!-- Services -->
+      <div>
+        <h4 class="mb-4 text-base!">Services</h4>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li><a href="#">SEO audit</a></li>
+          <li><a href="#">On-page SEO</a></li>
+          <li><a href="#">Technical SEO</a></li>
+          <li><a href="#">Local SEO</a></li>
+          <li><a href="#">Link building</a></li>
+        </ul>
+      </div>
+      <!-- Company -->
+      <div>
+        <h4 class="mb-4 text-base!">Company</h4>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Case studies</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+      <!-- Follow us -->
+      <div>
+        <h4 class="mb-4 text-base!">Follow us</h4>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li>
+            <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
+              <Icon name="mdi:facebook" class="text-xl text-black" />
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
+              <Icon name="mdi:instagram" class="text-xl text-black" />
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
+              <Icon name="mdi:twitter" class="text-xl text-black" />
+              <span>X</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
+              <Icon name="mdi:linkedin" class="text-xl text-black" />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-3 transition-colors hover:text-black">
+              <Icon name="mdi:youtube" class="text-xl text-black" />
+              <span>YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
