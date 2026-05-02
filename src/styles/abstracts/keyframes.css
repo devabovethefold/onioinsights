@@ -28,6 +28,13 @@
   }
 }
 
+@keyframes glass {
+  to {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+  }
+}
+
 @keyframes slide {
   from {
     transform: translate(var(--slide-x, 0), var(--slide-y, 0));

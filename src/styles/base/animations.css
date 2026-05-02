@@ -3,7 +3,9 @@
 @utility reveal {
   --reveal-name: reveal;
 
-  animation-name: var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none);
+  animation-name:
+    var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none),
+    var(--glass-name, none);
   animation-duration: var(--tw-duration, 500ms);
   animation-timing-function: var(--tw-ease, linear);
   animation-fill-mode: var(--animation-fill-mode, both);
@@ -16,7 +18,9 @@
 @utility dismiss {
   --dismiss-name: dismiss;
 
-  animation-name: var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none);
+  animation-name:
+    var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none),
+    var(--glass-name, none);
   animation-duration: var(--tw-duration, 500ms);
   animation-timing-function: var(--tw-ease, linear);
   animation-fill-mode: var(--animation-fill-mode, both);
@@ -29,11 +33,26 @@
 @utility slide {
   --slide-name: slide;
 
-  animation-name: var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none);
+  animation-name:
+    var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none),
+    var(--glass-name, none);
   animation-duration: var(--duration, 500ms);
   animation-timing-function: var(--ease, linear);
   animation-fill-mode: both;
   transform: translate(var(--slide-x, 0), var(--slide-y, 0));
+}
+
+@utility glass {
+  --glass-name: glass;
+
+  animation-name:
+    var(--reveal-name, none), var(--dismiss-name, none), var(--slide-name, none),
+    var(--glass-name, none);
+  animation-timing-function: var(--ease, linear);
+  animation-fill-mode: both;
+  animation-timeline: var(--animation-timeline, none);
+  animation-range: var(--range-start-type, entry) var(--range-start, 0%)
+    var(--range-end-type, contain) var(--range-end, 100%);
 }
 
 @utility stagger-* {
