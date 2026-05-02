@@ -1,0 +1,31 @@
+@reference "tailwindcss";
+
+@utility layer {
+  --surface-lit: inset 0 1px 0 0 oklch(from var(--white) l c h / 0.08);
+  --surface-shade: var(--box-shadow-color-base-lo);
+
+  background-color: var(--background-color-base-lo);
+  color: var(--text-color-base-md);
+  box-shadow: var(--surface-lit), var(--surface-shade);
+  border: 1px solid var(--border-color-base-lo);
+  transition: all 0.3s ease;
+
+  & .surface,
+  & .layer {
+    --surface-lit: inset 0 1px 0 0 oklch(from var(--white) l c h / 0.12);
+    --surface-shade: var(--box-shadow-color-base-md);
+
+    background-color: var(--background-color-base-md);
+    color: var(--text-color-base-hi);
+    border-color: var(--border-color-base-md);
+
+    & .surface,
+    & .layer {
+      --surface-lit: inset 0 1px 0 0 oklch(from var(--white) l c h / 0.16);
+      --surface-shade: var(--box-shadow-color-base-hi);
+
+      background-color: var(--base-950);
+      border-color: var(--border-color-base-hi);
+    }
+  }
+}

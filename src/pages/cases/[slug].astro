@@ -1,0 +1,58 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '@layouts/Common.astro'
+
+export async function getStaticPaths() {
+  const cases = await getCollection('cases')
+  return cases.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+
+const title = entry.data.title
+const subtitle = entry.data.category
+---
+
+<Layout {title} {subtitle}>
+  <article class="py-content format mx-auto max-w-4xl!">
+    <div class="border-neutral-lo mb-12 flex items-center justify-center gap-12 border-y py-6 text-sm">
+      <div class="text-left">
+        <span class="text-neutral-hi block text-xs font-bold uppercase tracking-widest">
+          Client
+        </span>
+        <span class="text-lg font-medium">{entry.data.client}</span>
+      </div>
+      <div class="text-left">
+        <span class="text-neutral-hi block text-xs font-bold uppercase tracking-widest">
+          Published
+        </span>
+        <span class="text-lg font-medium">
+          {
+            entry.data.publishDate.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })
+          }
+        </span>
+      </div>
+    </div>
+
+    <div class="prose-lg! mx-auto">
+      <Content />
+    </div>
+
+    <footer class="border-neutral-lo mt-16 border-t pt-12 text-center">
+      <a href="/cases" class="text-info-hi flex items-center justify-center gap-2 font-bold hover:underline">
+        <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to All Case Studies
+      </a>
+    </footer>
+  </article>
+</Layout>

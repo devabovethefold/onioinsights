@@ -1,0 +1,29 @@
+---
+import '@styles/layouts/common.css'
+
+import Drawer from '@landmarks/Drawer.astro'
+import Footer from '@landmarks/Footer.astro'
+import Head from '@landmarks/Head.astro'
+import Header from '@landmarks/Header.astro'
+import Hero from '@landmarks/Hero.astro'
+
+interface Props {
+  title: string
+  subtitle?: string
+}
+
+const {title, subtitle} = Astro.props
+---
+
+<html lang="en-US">
+  <Head {title} {subtitle} />
+  <body x-data>
+    <Header />
+    <main>
+      <Hero {title} {subtitle} />
+      <slot />
+    </main>
+    <Drawer />
+    <Footer />
+  </body>
+</html>

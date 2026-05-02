@@ -1,0 +1,21 @@
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  details::details-content {
+    transition:
+      block-size 300ms ease,
+      content-visibility 300ms allow-discrete;
+    block-size: 0;
+    overflow: clip;
+  }
+
+  details[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* Fallback for browsers that don't support the new details pseudo-element yet */
+/* (Optional, but good for UX if they want a transition now) */
+/* The video specifically focuses on the new property, so we'll stick to that. */

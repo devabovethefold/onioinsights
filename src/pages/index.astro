@@ -1,17 +1,19 @@
 ---
+import Layout from '@layouts/Common.astro'
 
+import Struggles from '@sections/home/struggles.astro'
+import Solution from '@sections/home/solution.astro'
+import Benefits from '@sections/home/benefits.astro'
+import SocialProof from '@sections/home/socialproof.astro'
+import FAQs from '@sections/home/faqs.astro'
+import CTA from '@sections/home/cta.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <Struggles />
+  <Solution />
+  <Benefits />
+  <SocialProof />
+  <FAQs />
+  <CTA />
+</Layout>

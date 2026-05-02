@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+@reference "../base/format.css";
+
+.tile {
+  @apply item;
+}

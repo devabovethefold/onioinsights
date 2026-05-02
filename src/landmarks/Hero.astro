@@ -1,0 +1,54 @@
+---
+import {Image} from 'astro:assets'
+
+import HeroImage from '@icons/hero.svg'
+
+interface Props {
+  title: string
+  subtitle?: string
+}
+
+const {title, subtitle} = Astro.props
+const pathname = Astro.url.pathname
+---
+
+{
+  pathname === '/' ? (
+    <header class="py-content format md:split-5/9 min-h-screen items-center">
+      <div class="item space-y-8">
+        <hgroup class="space-y-4!">
+          <h1>Make Your Brand Discoverable</h1>
+          <p>Onio Insights helps marketers measure and grow their brand visibility across the modern web.</p>
+        </hgroup>
+        <div class="flex gap-2">
+          <a class="btn" href="#">
+            Contact Us
+          </a>
+          <a class="btn btn-transparent" href="#">
+            About Us
+          </a>
+        </div>
+      </div>
+      <div class="item">
+        <Image
+          src={HeroImage}
+          alt="Hero Image"
+          class="h-auto w-full object-fill"
+          width="400"
+          height="550"
+        />
+      </div>
+    </header>
+  ) : (
+    <header class="py-hero breakout text-center">
+      <hgroup>
+        {subtitle && <p>{subtitle}</p>}
+        <h2>{title}</h2>
+      </hgroup>
+    </header>
+  )
+}
+
+<!-- <style>
+  @import '@styles/landmarks/hero.css';
+</style> -->

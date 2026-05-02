@@ -1,0 +1,54 @@
+@reference "tailwindcss";
+
+html {
+  @apply font-body text-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display font-light tracking-tight text-balance;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-none;
+}
+
+h1 {
+  @apply text-h1 leading-tight font-extrabold;
+}
+
+h2 {
+  @apply text-h2 leading-tight font-semibold;
+}
+
+h3 {
+  @apply text-h3;
+}
+
+h4 {
+  @apply text-h4;
+}
+
+h5 {
+  @apply text-h5;
+}
+
+h6 {
+  @apply text-h6;
+}
+
+p {
+  @apply leading-relaxed text-pretty;
+
+  &:not(:last-child) {
+    @apply mb-3;
+  }
+}

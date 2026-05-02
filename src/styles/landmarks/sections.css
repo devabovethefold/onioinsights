@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+section {
+  @apply gap-x-copy format py-copy;
+}

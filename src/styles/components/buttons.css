@@ -1,0 +1,86 @@
+@reference "tailwindcss";
+
+button,
+.btn {
+  @apply border-base-hi bg-base-hi text-base-on w-fit border px-6 py-3 font-medium;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.15s ease,
+    background-color 0.2s ease;
+
+  /* Ripple pseudo-element */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--ripple-x, 50%) var(--ripple-y, 50%), oklch(1 0 0 / 0.18) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px oklch(from var(--base-500) l c h / 0.2);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: translateY(0px) scale(0.98);
+    transition-duration: 0.08s;
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid oklch(from var(--accent-500) l c h / 0.8);
+    outline-offset: 3px;
+  }
+
+  &.btn-accent {
+    @apply border-accent-hi bg-accent-hi text-accent-on;
+    box-shadow: 0 0 0 1px oklch(from var(--accent-500) l c h / 0.4);
+
+    &:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+      box-shadow:
+        0 0 0 1px oklch(from var(--accent-500) l c h / 0.6),
+        0 6px 20px oklch(from var(--accent-500) l c h / 0.35),
+        0 0 12px 2px oklch(from var(--accent-500) l c h / 0.25);
+    }
+
+    &:active {
+      transform: translateY(0px) scale(0.97);
+      box-shadow: 0 0 0 1px oklch(from var(--accent-500) l c h / 0.4);
+    }
+  }
+
+  &.btn-outline {
+    @apply border-neutral-md text-base-hi bg-transparent;
+    border-radius: 3px;
+
+    &:hover {
+      @apply bg-base-hi/8;
+    }
+  }
+
+  &.btn-transparent {
+    @apply text-neutral-md border-transparent bg-transparent;
+
+    &:hover {
+      @apply text-base-hi;
+      background: none;
+      box-shadow: none;
+    }
+  }
+}
