@@ -6,6 +6,8 @@ import alpinejs from '@astrojs/alpinejs'
 
 import icon from 'astro-icon'
 
+import cloudflare from '@astrojs/cloudflare';
+
 export default defineConfig({
   fonts: [
     {
@@ -19,6 +21,7 @@ export default defineConfig({
       cssVariable: '--font-body',
     },
   ],
+
   integrations: [
     alpinejs({
       entrypoint: '/src/utilities/alpine/index',
@@ -48,7 +51,10 @@ export default defineConfig({
       },
     }),
   ],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare(),
 })

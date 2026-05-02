@@ -1,20 +1,48 @@
 {
   "compilerOptions": {
     "paths": {
-      "@assets/*": ["./src/assets/*"],
-      "@components/*": ["./src/components/*"],
-      "@content/*": ["./src/content/*"],
-      "@icons/*": ["./src/assets/icons/*"],
-      "@images/*": ["./src/assets/images/*"],
-      "@landmarks/*": ["./src/landmarks/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@sections/*": ["./src/sections/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@utilities/*": ["./src/utilities/*"]
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@content/*": [
+        "./src/content/*"
+      ],
+      "@icons/*": [
+        "./src/assets/icons/*"
+      ],
+      "@images/*": [
+        "./src/assets/images/*"
+      ],
+      "@landmarks/*": [
+        "./src/landmarks/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@sections/*": [
+        "./src/sections/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@utilities/*": [
+        "./src/utilities/*"
+      ]
     }
   },
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "include": [
+    ".astro/types.d.ts",
+    "**/*",
+    "./worker-configuration.d.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }
