@@ -1,4 +1,8 @@
 @reference "tailwindcss";
 
 header {
+  background-image: url('/assets/images/bg-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

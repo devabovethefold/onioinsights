@@ -50,7 +50,7 @@
     var(--glass-name, none);
   animation-timing-function: var(--ease, linear);
   animation-fill-mode: both;
-  animation-timeline: var(--animation-timeline, none);
+  animation-timeline: var(--animation-timeline, scroll(root));
   animation-range: var(--range-start, 0px) var(--range-end, 100px);
 }
 

@@ -1,11 +1,15 @@
 ---
+import {getImage} from 'astro:assets'
+
 import HeroImage from '@icons/hero.svg'
+import bgHero from '@images/bg-hero.jpg'
 
 interface Props {
   title: string
   subtitle?: string
 }
 
+const backgroundHero = await getImage({src: bgHero, format: 'avif'})
 const {title, subtitle} = Astro.props
 const pathname = Astro.url.pathname
 ---
@@ -22,20 +26,20 @@ const pathname = Astro.url.pathname
           </p>
         </hgroup>
         <div class="flex gap-2">
-          <a class="btn" href="#">
+          <a class="btn" href="/contact">
             Contact Us
           </a>
-          <a class="btn btn-transparent" href="#">
+          <a class="btn btn-transparent" href="/about">
             About Us
           </a>
         </div>
       </div>
-      <div class="item">
+      <div class="item hidden md:block">
         <img src={HeroImage.src} alt="Hero Image" class="h-auto w-full object-fill" />
       </div>
     </header>
   ) : (
-    <header class="pt-hero breakout pb-8 text-center">
+    <header class="py-hero text-center">
       <hgroup>
         {subtitle && <p>{subtitle}</p>}
         <h2>{title}</h2>
@@ -44,6 +48,6 @@ const pathname = Astro.url.pathname
   )
 }
 
-<!-- <style>
+<style>
   @import '@styles/landmarks/hero.css';
-</style> -->
+</style>
