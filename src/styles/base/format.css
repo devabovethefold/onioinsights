@@ -66,6 +66,10 @@
       [screen-end];
   }
 
+  &:has(.item) {
+    @apply gap-y-6;
+  }
+
   > *:not(.item) {
     grid-column: copy;
   }

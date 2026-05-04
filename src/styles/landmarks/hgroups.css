@@ -8,6 +8,6 @@ hgroup {
   }
 
   p {
-    @apply text-base-hi text-sm font-bold uppercase;
+    @apply text-sm font-bold uppercase;
   }
 }
