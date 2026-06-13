@@ -7,8 +7,12 @@ import alpinejs from '@astrojs/alpinejs'
 import icon from 'astro-icon'
 
 
+import cloudflare from '@astrojs/cloudflare';
+
+
 export default defineConfig({
   output: 'static',
+
   fonts: [
     {
       provider: fontProviders.google(),
@@ -55,4 +59,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare(),
 })
